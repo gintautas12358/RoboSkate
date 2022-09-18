@@ -1,0 +1,3 @@
+This container is just a workaround to assign the ownership of files written by some dockercontainer back to the linux user.
+
+Probably there is a simpler solution for this...
