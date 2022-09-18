@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+service Manager {
+  rpc get_NRP_data(No_Param) returns (Data) {}
+  rpc get_SB3_actions(No_Param) returns (Actions) {}
+
+  rpc set_NRP_data(Data) returns (No_Param) {}
+  rpc set_SB3_actions(Actions) returns (No_Param) {}
+}
+
+message No_Param {}
+
+message Data {
+   int32 iteration = 1;
+   float board_position_x = 2;
+   float board_position_y = 3;
+   float board_position_z = 4;
+}
+
+message Actions{
+   float action1 = 1;
+   float action2 = 2;
+   float action3 = 3;
+}
+

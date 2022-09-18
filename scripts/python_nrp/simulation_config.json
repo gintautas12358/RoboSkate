@@ -1,0 +1,32 @@
+{
+	"SimulationName": "unity",
+	"SimulationDescription": "Unity engine test",
+	"SimulationTimeout": 200,
+	"EngineConfigs": 
+	[
+		{
+			"EngineType": "unity_grpc",
+			"EngineName": "unity_grpc",
+			"EngineCommandTimeout": 10,
+			"EngineTimestep": 0.2,
+			"EngineProcCmd": "games/linux/NRPDummyBallGame/NRPDummyBallGame.x86_64"
+		},
+		{
+			"EngineType": "python_json",
+			"EngineName": "python",
+			"PythonFileName": "scripts/python_nrp/client.py",
+			"EngineTimestep": 0.2
+		}
+	],
+	"TransceiverFunctionConfigs":
+	[
+		{
+			"Name": "tf_1",
+			"FileName": "scripts/python_nrp/tf_1.py"
+		},
+		{
+			"Name": "tf_2",
+			"FileName": "scripts/python_nrp/tf_2.py"
+		}
+	]
+}
